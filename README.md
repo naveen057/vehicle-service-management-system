@@ -1,6 +1,22 @@
 # VEHICLE SERVICE MANAGEMENT
-![developer](https://img.shields.io/badge/Developed%20By%20%3A-Sumit%20Kumar-red)
----
+A web-based Vehicle Service Management System built with Python and Django to manage vehicle service requests, customers, mechanics, repairs, invoices, and feedback through a centralized platform.
+
+## 📌 Project Overview
+
+The Vehicle Service Management System helps a vehicle service center manage its daily service operations digitally.
+
+The system provides separate functionalities for Customers, Mechanics, and Administrators, allowing service requests to be created, approved, assigned, tracked, and completed through different stages.
+
+## 🎯 Objectives
+Digitize vehicle service center operations.
+Manage customer and mechanic information.
+Allow customers to submit vehicle service requests.
+Allow administrators to approve and assign service requests.
+Track vehicle repair progress.
+Manage service costs and invoices.
+Collect customer and mechanic feedback.
+Provide dashboards for managing service activities.
+
 ## SCREENSHOTS
 ### Home Page
 ![dashboard snap](https://github.com/sumitkumar1503/vehicleservicemanagement/blob/master/static/screenshots/home.png?raw=true)
