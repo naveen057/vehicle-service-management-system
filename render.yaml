@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: vehicle-service-management
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn vehicleservicemanagement.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.14
+      - key: DEBUG
+        value: "False"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: "*"

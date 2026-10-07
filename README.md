@@ -72,7 +72,34 @@ py manage.py createsuperuser
 - we can change theme of website day(white) and night(black)
 - if customer is deleted by admin then their request(Enquiry) will be deleted automatically
 
-## HOW TO RUN THIS PROJECT
+## 🚀 Live Deployment
+
+### Option 1: One-Click Deploy to Render (Free)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/naveen057/vehicle-service-management-system)
+
+#### Step-by-Step Render Deployment:
+1. Go to [Render](https://dashboard.render.com/) and sign in with GitHub.
+2. Click **New +** and select **Web Service**.
+3. Select your repository: `naveen057/vehicle-service-management-system`.
+4. Set the following settings (pre-configured via `render.yaml`):
+   - **Runtime**: `Python`
+   - **Build Command**: `./build.sh`
+   - **Start Command**: `gunicorn vehicleservicemanagement.wsgi:application`
+5. Click **Deploy Web Service**.
+6. Render will build the app and give you a public live link:
+   `https://vehicle-service-management-system.onrender.com`
+
+### Option 2: Deploy with Docker
+```bash
+docker build -t vehicle-service-management .
+docker run -p 8000:8000 vehicle-service-management
+```
+Access the application at `http://localhost:8000/`.
+
+---
+
+## HOW TO RUN THIS PROJECT LOCALLY
 - Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
